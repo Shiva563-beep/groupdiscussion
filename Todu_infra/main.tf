@@ -8,6 +8,12 @@ module "azurerm_resource_group1" {
   resource_group_name = "shiva-rg2"
   location            = "Japan East"
 }
+module "azurerm_resource_group4" {
+  source              = "../Module/azurerm_resource_group"
+  resource_group_name = "shiva-rg5"
+  location            = "Japan East"
+}
+
 module "azurerm_resource_group2" {
   source              = "../Module/azurerm_resource_group"
   resource_group_name = "shiva-rg3"
