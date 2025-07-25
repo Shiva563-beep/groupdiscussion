@@ -13,6 +13,11 @@ module "azurerm_resource_group2" {
   resource_group_name = "shiva-rg3"
   location            = "Japan East"
 }
+module "azurerm_resource_group3" {
+  source              = "../Module/azurerm_resource_group"
+  resource_group_name = "shiva-rg4"
+  location            = "Japan East"
+}
 module "virtual_network" {
   depends_on           = [module.azurerm_resource_group]
   source               = "../Module/azurerm_virtual_network"
